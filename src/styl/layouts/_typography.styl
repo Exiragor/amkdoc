@@ -1,0 +1,149 @@
+body
+	color #525b6a
+	font-family "Proxima Nova", Helvetica, Arial
+	font-size 16px
+	font-weight 400
+	line-height 26px
+	
+h1
+	color #525b6a
+	display inline-block
+	font-size 30px
+	font-weight 700
+	line-height 42px
+	@media mobile
+		font-size 26px
+		line-height 32px
+h2
+	color #525b6a
+	font-size 26px
+	font-weight 700
+	line-height 28px
+	@media mobile
+		font-size 22px
+		line-height 28px
+	& + p
+		margin-top 30px
+		
+h3
+	color #7f8ea5
+	font-size 20px
+	font-weight 700
+	line-height 26px
+	margin-top 40px
+	margin-bottom 20px
+	h1 + &
+		margin-top 10px
+	&.inner__text
+		margin-bottom: 15px
+h5
+	font-weight 700
+	& + p
+		margin-top 0
+		
+.sub-title
+	font-size 18px
+	font-weight 500
+	line-height 30px
+	@media mobile
+		font-size 16px
+		line-height 28px
+.text-bold
+	font-weight 700
+.decorated-link
+	border-link(#cf73b0)
+	line-height 1.5
+	&:hover
+		border-link(#6894d0)
+
+
+
+
+p.introduction
+	color #525b6a
+	font-size 20px
+	font-weight 400
+	line-height 29px
+	@media mobile
+		font-size 16px
+		line-height 24px
+.body
+	color #525b6a
+	font-size 16px
+	font-weight 400
+	line-height 26px
+	
+p
+	margin-top 20px
+	margin-bottom 20px
+ul, ol
+	padding-left 40px
+	margin-top 20px
+	margin-bottom 20px
+b, strong
+	font-weight 700
+i, em
+	font-style italic
+sup
+	font-size 85%
+	line-height 0
+	vertical-align baseline
+	position relative
+	top -0.45em
+sub
+	font-size 85%
+	line-height 0
+	vertical-align baseline
+	position relative
+	top 0.2em
+u
+	text-decoration underline
+
+blockquote
+	position relative
+	&:before,
+	&:after
+		font-family "Times New Roman"
+		color #bdbdbd
+		font-size 3em
+		line-height 0.1em
+		vertical-align -.45em
+		display inline-block
+
+	&:before
+		content "\201C"
+		margin-right 5px
+	&:after
+		content "\201D"
+		margin-left 5px
+
+code
+	font-family monospace
+	
+.center
+	margin-left auto
+	margin-right auto
+	&-flex
+		display flex
+		justify-content center
+
+.link-text
+	color #72afff
+	cursor pointer
+	transition: all 0.3s ease-out;
+	&:hover
+		color #6bd869
+	&--service
+		font-weight 700
+		// margin-right 5px
+		&:hover
+			color #6bd869
+	&--mail
+		color #7f8ea5
+			
+.text-italic
+	font-style italic
+	font-weight 700
+
+.text-center
+	text-align center

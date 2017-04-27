@@ -1,0 +1,51 @@
+.comment
+	column-gap 60px
+	column-count 3
+	margin 40px 0 50px
+	// padding-left 20px
+	// padding-right 20px
+	// @media mobile
+	// 	padding-right 15px
+	// 	padding-left 15px
+	@media only screen and (max-width: 1360px)
+		column-count 2
+	&__item
+		break-inside avoid
+		& + &
+			margin-top 10px
+	&__image
+		size 100px
+		float left
+		background-repeat no-repeat
+		background-size cover
+		background-position 50%
+		border-radius 50%
+		margin-right 20px
+		position relative
+		z-index 10
+	&__link
+		@extend .decorated-link
+		font-size 16px
+		font-weight 500
+		line-height 20pz
+		margin-top 30px
+		float left
+		@media mobile
+			display none
+	&__content
+		border 1px solid #e8e8e8
+		border-radius 50px
+		padding 55px 30px 35px
+		clear both
+		position relative
+		top -25px
+		z-index 1
+	&__caption
+		font-size 18px
+		font-weight 700
+		line-height 28px
+		margin-bottom 10px
+.comment-slider
+	column-count auto !important
+	.comment__item + .comment__item
+		margin-top 0

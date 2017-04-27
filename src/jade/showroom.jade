@@ -1,0 +1,263 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        title Future project
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+        link(rel="shortcut icon" type="image/x-icon" href="images/favicon.ico")
+        link(rel="apple-touch-icon" sizes="57x57" href="images/favicon-iphone.svg")
+        link(rel="apple-touch-icon" sizes="114x114" href="images/favicon-iphone.svg")
+        link(rel="apple-touch-icon" sizes="72x72" href="images/favicon-iphone.svg")
+        link(rel="apple-touch-icon" sizes="144x144" href="images/favicon-iphone.svg")
+        link(rel="apple-touch-icon" sizes="57x57" href="images/favicon-iphone.png")
+        link(rel="apple-touch-icon" sizes="114x114" href="images/favicon-iphone.png")
+        link(rel="apple-touch-icon" sizes="72x72" href="images/favicon-iphone.png")
+        link(rel="apple-touch-icon" sizes="144x144" href="images/favicon-iphone.png")
+
+        //- script
+        //- 	include ../bower_components/async-styles-loader/async-style.min.js
+        //- 	| getFont("css/fonts.css","css/fonts_ie8.css", "1.0.0")
+        //- 	| //getStyleAsync("../css/all.css?ver=1.0.0",'all');
+        !="<!--[if IE 9]>"
+        script(type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js")
+        !="<![endif]-->"
+        link(rel="stylesheet", href="css/fonts.css")
+        link(rel="stylesheet", href="css/all.css")
+        //block vars
+        block mixins
+            mixin breadcrumbs(name)
+                .breadcrumbs
+                    -for(var i=0; i < name.length - 1; i++ )
+                    a.breadcrumbs__item(href="#")= name[i]
+                    span.breadcrumbs__separator /
+                    span.breadcrumbs__item= name[name.length - 1]
+    body
+        .row.row--60
+            .col-12
+                .name-block COLORS
+            .col-2
+                .clr-block.clr-block--green
+                .clr-text 6BD869
+            .col-2
+                .clr-block.clr-block--blue
+                .clr-text 72AFFF
+            .col-2
+                .clr-block.clr-block--blue-light
+                .clr-text 8DD8FC
+            .col-2
+                .clr-block.clr-block--black
+                .clr-text 525B6A
+            .col-2
+                .clr-block.clr-block--gray
+                .clr-text EDF6FD
+            .col-2
+                .clr-block.clr-block--gray-dark
+                .clr-text 7F8EA5
+
+        .row.row--60
+            .col-12
+                .name-block GRID LAYOUT
+            .col-12
+                .grid-block__text Total Width:
+                    span.grid-block__text.grid-block__text--numbers 1280px
+                .grid-block__text Columns:
+                    span.grid-block__text.grid-block__text--numbers 12
+                .grid-block__text Column Width:
+                    span.grid-block__text.grid-block__text--numbers 70px
+                .grid-block__text Gutter Width:
+                    span.grid-block__text.grid-block__text--numbers 40px
+
+        .row
+            .col-12
+                .grid-block__blocks
+                    .grid-block__blocks-inner 1280
+            .col-6
+                .grid-block__blocks
+                    .grid-block__blocks-inner 620
+            .col-6
+                .grid-block__blocks
+            .col-4
+                .grid-block__blocks
+                    .grid-block__blocks-inner 400
+            .col-4
+                .grid-block__blocks
+            .col-4
+                .grid-block__blocks
+            .col-3
+                .grid-block__blocks
+                    .grid-block__blocks-inner 290
+            .col-3
+                .grid-block__blocks
+            .col-3
+                .grid-block__blocks
+            .col-3
+                .grid-block__blocks
+            .col-24
+                .grid-block__blocks
+                    .grid-block__blocks-inner 224
+            .col-24
+                .grid-block__blocks
+            .col-24
+                .grid-block__blocks
+            .col-24
+                .grid-block__blocks
+            .col-24
+                .grid-block__blocks
+            .col-2
+                .grid-block__blocks
+                    .grid-block__blocks-inner 180
+            .col-2
+                .grid-block__blocks
+            .col-2
+                .grid-block__blocks
+            .col-2
+                .grid-block__blocks
+            .col-2
+                .grid-block__blocks
+            .col-2
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+                    .grid-block__blocks-inner.grid-block__blocks-inner--point-2 70
+            .col-1
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+            .col-1
+                .grid-block__blocks
+
+        .row.row--60
+            .col-12
+                .name-block TYPOGRAPHY
+            .typography-block
+                .typography-block__item-var Text: H1
+                .typography-block__item-val-h1 Самый большой заголовок
+            .typography-block
+                .typography-block__item-var Text: H2
+                .typography-block__item-val-h2 Заголовок второго уровня
+            .typography-block
+                .typography-block__item-var Text: H3
+                .typography-block__item-val-h3 Заголовок третьего уровня
+            .typography-block
+                .typography-block__item-var Text: Introduction
+                .typography-block__item-val-Introduction Волшебный мир, в который он уже вступал, который уже возникал из туманных волн прошедшего, шевельнулся — и исчез. Дорога из Марьина огибала лесок; легкая пыль лежала на ней, еще не тронутая со вчерашнего дня ни колесом, ни ногою.
+            .typography-block
+                .typography-block__item-var Text: Body
+                .typography-block__item-val-Body Прогуляться собираетесь? Вечерок-то будет хорош, только грозы бы вот не было. А впрочем, и лучше, кабы освежило... И вдруг Раскольникову ясно припомнилась вся сцена третьего дня под воротами; он сообразил, что кроме дворников там стояло тогда еще несколько человек, стояли и женщины. Он припомнил один голос, предлагавший вести его прямо в квартал. Лицо говорившего не мог он вспомнить и даже теперь не признавал, но ему памятно было, что он даже что-то ответил ему тогда, обернулся к нему... Оба сидели рядом, грустные и убитые, как бы после бури выброшенные на пустой берег одни. Он смотрел на Соню и чувствовал, как много на нем было ее любви, и странно, ему стало вдруг тяжело и больно, что его так любят. Да, это было странное и ужасное ощущение! Идя к Соне, он чувствовал, что в ней вся его надежда и весь исход; он думал сложить хоть часть своих мук, и вдруг, теперь, когда всё сердце ее обратилось к нему, он вдруг почувствовал и сознал, что он стал беспримерно несчастнее, чем был прежде.
+            .typography-block
+                .typography-block__item-var Text: Small
+                .typography-block__item-val-Small СУДЬЯ, ПОПЕЧИТЕЛЬ БОГОУГОДНЫХ ЗАВЕДЕНИЙ, СМОТРИТЕЛЬ УЧИЛИЩ И ПОЧТМЕЙСТЕР УХОДЯТ И В ДВЕРЯХ СТАЛКИВАЮТСЯ С ВОЗВРАЩАЮЩИМСЯ КВАРТАЛЬНЫМ. НУ ВОТ ВИДИШЬ, ДУРА, НУ ВОТ ВИДИШЬ: ИЗ-ЗА ТЕБЯ, ЭТАКОЙ ДРЯНИ, ГОСТЬ ИЗВОЛИЛ СТОЯТЬ НА КОЛЕНЯХ; А ТЫ ВДРУГ ВБЕЖАЛА КАК СУМАСШЕДШАЯ.
+
+        .row.row--60
+            .col-12
+                .name-block BUTTONS
+            .col-12
+                .buttons-block
+                    .button__item-text Button
+                    .button__item.button__item-green
+                        .button-text КНОПКА
+                    .button__item.button__item-blue
+                        .button-text КНОПКА
+                    .button__item.button__item-blue-light
+                        .button-text КНОПКА
+                    .button__item.button__item-tran
+                        .button-text.button-text--last КНОПКА
+                .buttons-block
+                    .button__item-text Hover
+                    .button__item.button__item-green.button__item-green--hover
+                        .button-text КНОПКА
+                    .button__item.button__item-blue.button__item-blue--hover
+                        .button-text КНОПКА
+                    .button__item.button__item-blue-light.button__item-blue-light--hover
+                        .button-text КНОПКА
+                    .button__item.button__item-tran.button__item-tran--hover
+                        .button-text КНОПКА
+                .buttons-block
+                    .button__item-text Selected
+                    .button__item.button__item-green.button__item-green--hover
+                        .button-text КНОПКА
+                    .button__item.button__item-blue.button__item-blue--hover
+                        .button-text КНОПКА
+                    .button__item.button__item-blue-light.button__item-blue-light--hover
+                        .button-text КНОПКА
+                    .button__item.button__item-tran.button__item-tran--hover
+                        .button-text КНОПКА
+                .buttons-block
+                    .button__item-text Disabled
+                    .button__item.button__item-green.button_item--disabled
+                        .button-text КНОПКА
+                    .button__item.button__item-blue.button_item--disabled
+                        .button-text КНОПКА
+                    .button__item.button__item-blue-light.button_item--disabled
+                        .button-text КНОПКА
+                    .button__item.button__item-tran.button_item--disabled
+                        .button-text.button-text--last КНОПКА
+
+
+            .row.row--60
+                .col-12
+                    .name-block LINKS
+                .col-12
+                    .link-block__menu Ссылка в меню
+                    .link-block__menu.link-block__menu--hover Ссылка в меню hover
+                    .link-block
+                        .link-block__text a:
+                        span.link-block__item Ссылка в тексте вот 
+                            a.link-block__item.link-block__item--mtext такая
+                    .link-block
+                        .link-block__text a:hover
+                        span.link-block__item Ссылка в тексте вот 
+                            a.link-block__item.link-block__item--mtext-2 такая
+
+
+            .row.row--60
+                .col-12
+                    .name-block ICONS
+                .col-12
+                    img.icons-block.icons-block--callback(src="images/icon-call.svg")
+                    img.icons-block.icons-block--callback(src="images/icon-mail.svg")
+                .col-12
+                    img.icons-block.icons-block--medicine(src="images/icon-medicine-stethoscope.svg")
+                    img.icons-block.icons-block--medicine(src="images/icon-medicine-doc.svg")
+                    img.icons-block.icons-block--medicine(src="images/icon-medicine-heart.svg")
+                    img.icons-block.icons-block--medicine(src="images/icon-medicine-patch.svg")
+                    img.icons-block.icons-block--medicine(src="images/icon-medicine-pills.svg")
+                .col-12
+                    img.icons-block.icons-block--slide(src="images/icon-plus-gray.svg")
+                    img.icons-block.icons-block--slide(src="images/icon-plus-green.svg")
+                    img.icons-block.icons-block--slide(src="images/icon-minus.svg")
+                .col-12
+                    img.icons-block.icons-block--arrow(src="images/icon-arrow-left.svg")
+                    img.icons-block.icons-block--arrow(src="images/icon-arrow-right.svg")
+
+
+
+            .row.row--60
+                .col-12
+                    .name-block INPUT
+                .col-12
+                    .input-block
+                        .input-block__text Normal
+                        .input-block__label Ваше имя
+                        input.input-block__item
+                    .input-block
+                        .input-block__text Hover, typing
+                        .input-block__label Телефон*
+                        input.input-block__item.input-block__item--hover

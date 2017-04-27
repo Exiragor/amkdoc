@@ -1,0 +1,194 @@
+.slider__container
+	height 100%
+// .slick-initialized .slick-slide,
+// .slider__container
+// 	display flex
+// 	align-items center
+.slick-slide
+	outline none
+	
+.slick-next
+	font-size 0
+	position absolute
+	size 64px 64px
+	background url("../images/icon-arrow-left.svg") 50% no-repeat !important
+	opacity 1
+	top 50%
+	right: 430px;
+	border none
+	cursor pointer
+	// left 0
+	z-index 100
+	filter none !important
+	@media only screen and (max-width: 1700px)
+		right 330px
+	@media only screen and (max-width: 1580px)
+		right 230px
+	@media only screen and (max-width: 1375px)
+		right 130px
+	@media only screen and (max-width: 1160px)
+		right 80px
+	@media only screen and (max-width: 1150px)
+		right 60px
+	// &:hover
+		// background url("../images/arrow.svg") 50% no-repeat
+	&:before
+		content ""
+		opacity 1
+		position absolute
+		right 0
+.slick-slide img
+	max-height 100%
+	float left
+	margin-right 10px
+	// margin-right auto
+.slider__container
+	opacity 0
+	transition opacity 0.3s ease-out
+.slick-track .slider__container
+	opacity 1
+	transition opacity 0.3s ease-out
+.about-slider,
+.sample-slider
+	width 100%
+	text-align left
+	unicode-bidi isolate
+	// &__button-container
+	// 	height 100%
+	// 	position absolute
+	// 	top 0
+	// 	left 0
+	// 	right 0
+	// 	@media mobile
+	// 		height auto
+	// 		width auto
+	// 		left auto
+	// 		bottom 0
+	// .wrapper
+	// 	height 100%
+	// 	display flex
+	// 	align-items center
+	// 	justify-content flex-end
+// .sample-slider.slick-slider
+// 	margin 0 -15px
+// 	width auto
+// 	width auto
+// 	margin-right -15px
+// 	margin-left -15px
+// .sample-slider
+// 	.slick-list
+// 		overflow hidden
+// 	.slick-track
+// 		width 100vw
+// 		margin-left -15px
+// 		margin-right - 15px
+// 	.slick-slide
+// 		height 220px
+	// .slick-list
+	// 	height 220px
+.slick-dots
+	width 100%
+	display flex !important
+	justify-content center
+	// margin-top 20px
+	// margin-bottom 30px
+	li
+		size 12px
+		text-indent -9999px
+		background-color #c7cfd9
+		border-radius 50%
+		cursor pointer
+		margin-left 15px
+		margin-bottom: 30px;
+		float left
+		display block
+		@media mobile
+			margin-bottom: 0px;
+		&:first-child
+			margin-left 0
+		&.slick-active
+			background-color #6bd869
+.comment-slider .slick-dots
+	margin-top 0
+
+
+.slider-item
+	opacity 0.1
+	transition: opacity 0.3s;
+	@media only screen and (max-width: 480px)
+		opacity: 1;
+		filter: none;
+	&-wrap
+		max-width: 740px;
+		margin-left auto
+		margin-right auto
+		margin-bottom 30px
+		text-align center
+	&__text
+		// min-height 215px
+		color #525b6a
+		font-family "Proxima Nova"
+		font-size 16px
+		font-weight 400
+		line-height 26px
+		@media mobile
+			margin: 0 15px;
+	&__name
+		color #72afff
+		font-family "Proxima Nova"
+		font-size 18px
+		font-weight 700
+		line-height 20px
+		margin-top 25px
+	&__about
+		color #7f8ea5
+		font-family "Proxima Nova"
+		font-size 13px
+		font-weight 700
+		// font-style italic
+		line-height 24px
+		margin-top 6px
+		margin-bottom 9px
+		
+
+.slick-current
+	opacity 1
+	
+
+.slick-prev
+	font-size 0
+	position absolute
+	size 64px 64px
+	background url("../images/icon-arrow-left.svg") 50% no-repeat !important
+	transform-scale(scale(-1, 1))
+	opacity 1
+	top 50%
+	left: 430px;
+	border none
+	cursor pointer
+	// left 0
+	z-index 100
+	filter none !important
+	@media only screen and (max-width: 1700px)
+		left 330px
+	@media only screen and (max-width: 1580px)
+		left 230px
+	@media only screen and (max-width: 1375px)
+		left 130px
+	@media only screen and (max-width: 1160px)
+		left 80px
+	@media only screen and (max-width: 1150px)
+		left 60px
+	// &:hover
+		// background url("../images/arrow.svg") 50% no-repeat
+	&:before
+		content ""
+		opacity 1
+		position absolute
+		right 0
+		
+.slick-arrow
+	border-radius: 50px;
+	transition: all 0.3s ease-out;
+	&:hover
+		box-shadow: 0 20px 30px rgba(127,142,165,0.5);

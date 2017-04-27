@@ -1,0 +1,21 @@
+{
+  "name": "prototype-for-slicing",
+  "version": "1.0.0",
+  "homepage": "https://github.com/prog666/prototype-for-slicing",
+  "authors": [
+    "prog666 <gnomdan@yandex.ru>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "async-styles-loader": "~1.0.2",
+    "slick-carousel": "~1.6.0"
+  }
+}

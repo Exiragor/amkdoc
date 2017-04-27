@@ -1,0 +1,251 @@
+.header-top
+	background-color: #fff;
+	border-bottom: 1px dashed #d7dfe5;
+	padding-left: 60px;
+	padding-right: 60px;
+	position: relative;
+	z-index: 10;
+	@media only screen and (max-width: 1420px)
+		padding-left: 20px;
+		padding-right: 20px;
+	// @media mobile
+	// 	padding-right 15px
+	// 	padding-left 15px
+	&__wrapper
+		height: 140px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media mobile
+			height: 110px;
+			justify-content: flex-start;
+.header
+	position relative
+// 	&--main
+// 		background #fff url("../images/header-image.jpg") 50% no-repeat
+// 		background-size cover
+// 		@media mobile
+// 			background-position center top
+// 			background-size 100% 590px
+.header-vk
+	size 30px 18px
+	margin-left auto
+	text-decoration none
+	display block
+	path
+		transition all 0.3s ease-out
+	&:hover
+		path
+			fill #19DEEA
+	@media only screen and (max-width: 800px)
+		display none
+.header-image-bg
+	size 100%
+	background #fff url("../images/header-image.jpg") 50% no-repeat
+	background-size cover
+	position absolute
+	top 0
+	left 0
+	z-index 1
+	@media mobile
+		max-height 590px
+		background-position center top
+.header-image
+	height calc(100vh - 70px)
+	min-height 790px
+	display flex
+	align-items flex-end
+	position relative
+	z-index 10
+	@media mobile
+		height auto
+		padding 20px 0
+		display block
+	&__row
+		@extend .row
+	&__text-col
+		width 50%
+		padding-left 30px
+		padding-right 90px
+		@media only screen and (max-width: page-width + 60px)
+			padding-right 50px
+		@media only screen and (max-width: 1050px)
+			width 100%
+			padding-right 30px
+		@media mobile
+			padding-right 15px
+			padding-left 15px
+	&__caption
+		color #fff
+		font-size 40px
+		font-weight 900
+		line-height 47px
+		@media mobile
+			font-size 24px
+			line-height 32px
+			&:after
+				content ""
+				height 471px
+				background url("../images/header-image-ipad-mobile.png") no-repeat
+				background-size contain
+				margin 20px -15px 0
+				display block
+	&__text
+		color #fff
+		font-size 18px
+		line-height 30px
+		font-weight 500
+		margin-top 40px
+		@media mobile
+			color #000
+			font-size 16px
+			line-height 28px
+			margin-top 0
+	&__button
+		margin-top 40px
+		margin-bottom 100px
+		@media mobile
+			margin-top 20px
+			margin-bottom 0
+	&__caption-highlight
+		background-color alpha(#f850bf, .45)
+		border-radius 3px
+		padding 0 5px
+	&__text-highlight
+		color #b0f1ff
+		font-weight 700
+		@media mobile
+			color #6894d0
+	&__ipad
+		width 50%
+		max-width 620px
+		background url("../images/header-image-ipad.png") 20px bottom no-repeat
+		background-size contain
+		position relative
+		@media only screen and (max-width: page-width + 60px)
+			width calc(50% - 75px)
+			background-position left bottom
+	&__iphone
+		size 100% 450px
+		background url("../images/header-image-iphone.png") right -10px bottom no-repeat
+		background-size contain
+		position absolute
+		right -110px
+		bottom -95px
+		@media only screen and (max-width: 1460px)
+			right 40px
+		@media only screen and (max-width: 1200px)
+			right 0
+.header-ipad
+	position relative
+	display flex
+	@media only screen and (max-width: 1460px)
+		width 50%
+		padding-right 150px
+	@media only screen and (max-width: 1200px)
+		padding-right 50px
+	@media only screen and (max-width: 1050px)
+		display none
+	&__image
+		width 100%
+		align-self flex-end
+
+.header-info
+	display flex
+	margin-bottom 24px
+	@media only screen and (max-width: 1150px)
+		margin-bottom: 0px;
+	@media only screen and (max-width: 900px)
+		flex-direction column
+	@media only screen and (max-width: 680px)
+		display none
+.header-info__text
+	margin-left auto
+	color #7f8ea5
+	font-family "Proxima Nova"
+	font-size 16px
+	font-weight 700
+	line-height 20px
+	@media only screen and (max-width: 940px)
+		margin-right: 118px;
+	@media only screen and (max-width: 900px)
+		margin-top 42px
+		margin-right 60px
+		margin-bottom 15px
+	@media only screen and (max-width: 702px)
+		display: none;
+	& + &
+		margin-top 0px
+		margin-left 30px
+		@media only screen and (max-width: 1150px)
+			margin-right 60px
+		@media only screen and (max-width: 940px)
+			display none
+		@media only screen and (max-width: 900px)
+			margin-left auto
+
+.header-wrap
+	display flex
+	flex-direction column
+
+.header-text
+	max-width 565px
+	text-align center
+	margin 10px auto 30px
+	@media mobile
+		max-width 313px
+		text-align center
+		margin: 10px auto 0px;
+
+.header-waves
+	background-repeat: no-repeat;
+	background-size: cover;
+	@media mobile
+		background-position: 0 0;
+
+.header-waves_3
+	background-image url("../images/waves_3.svg")
+	// background-size cover
+	width 100%
+	height 109px
+	position absolute
+	bottom 0
+	@media mobile
+		height: 155px;
+		background-image: url("../images/waves-mob_3.svg");
+
+
+.header-waves_2
+	height: 184px;
+	background-image: url("../images/waves_2.svg");
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	@media mobile
+		height: 150px;
+		background-image: url("../images/waves-mob_2.svg");
+
+.header-waves_1
+	height: 184px;
+	background-image: url("../images/waves_1.svg");
+	width: 100%;
+	position: absolute;
+	bottom: 0;	
+	@media mobile
+		height: 115px;
+		background-image: url("../images/waves-mob_1.svg");
+
+.header
+	&-wraper
+		height: 505px;
+		padding-top  75px
+		padding-bottom 180px
+	&--main
+		min-height 650px
+
+.header-surname
+	font-weight 700
+	margin-bottom 0
+	@media only screen and (max-width: 350px)
+		font-size: 14px;
+		line-height: 17px;

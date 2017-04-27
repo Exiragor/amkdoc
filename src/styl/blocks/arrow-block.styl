@@ -1,0 +1,42 @@
+.arrow-block
+	font-family Arbat
+	font-size 14px
+	font-weight 700
+	line-height 14px
+	position relative
+	&:after
+		content ""
+		size 54px 40px
+		background-repeat no-repeat
+		background-position 50%
+		position absolute
+		left 0
+		bottom -55px
+		display block
+	&--header
+		color #fff
+		position absolute
+		right -145px
+		top -55px
+		@media only screen and (max-width: 1450px)
+			right 3px
+		@media only screen and (max-width: 1360px)
+			display none
+			// right -100px
+		// @media only screen and (max-width: page-width + 60px)
+		// 	right -75px
+		// @media only screen and (max-width: 1300px)
+		&:after
+			background-image url("../images/icon-arrow-totop.svg")
+	&--footer
+		color #999
+		max-width 120px
+		position absolute
+		right -130px
+		bottom -65px 
+		@media mobile
+			display none
+		&:after
+			background-image url("../images/icon-arrow-tobottom.svg")
+			bottom auto
+			top -55px

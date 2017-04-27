@@ -1,0 +1,40 @@
+.search
+	&__caption
+		color #7f8ea5
+		font-size 20px
+		font-weight 700
+		line-height 20px
+		margin-top 25px
+		margin-bottom 20px
+	&__form
+		display flex
+		@media mobile
+			display block
+		// align-items flex-start
+	&__input
+		min-height 60px
+		max-width 640px
+		background-image url('../images/icon-search.svg')
+		background-position 20px 50%
+		background-repeat no-repeat
+		padding-left 60px
+		margin-top 0
+		margin-bottom 0
+		margin-right 15px
+		flex 0 1 auto
+		@media mobile
+			margin-bottom -20px
+
+.search-chars
+	color #7f8ea5
+	font-size 16px
+	font-weight 700
+	line-height 20px
+	text-transform uppercase
+	margin 25px -10px 30px
+	&__item
+		text-decoration none
+		margin 5px 10px
+		display inline-block
+		&:hover
+			color #6bd869

@@ -1,0 +1,53 @@
+.logo
+	width: 96px;
+	height: 96px;
+	color #fff
+	font-family Pacifico
+	font-size 24px
+	font-weight 400
+	line-height 42px
+	text-decoration none
+	background-repeat: no-repeat;
+	background-image: url('../images/kochetkov-doc.png');
+	background-position: -10px 0;
+	border-radius: 50%;
+	display: inline-block;
+	transition color 0.3s ease-out
+	@media mobile
+		font-size 22px
+		line-height 34px
+		background-size: 90px;
+		background-image: url('../images/kochetkov-doc_mobile.jpg');
+	&:hover
+		color #EE87CB
+	&--header
+		vertical-align: middle;
+		@media mobile
+			size 78px
+	&__text
+		margin-left 20px
+		margin-right auto
+		// & h2
+		// 	color #525b6a
+		// 	font-family "Proxima Nova"
+		// 	font-size 26px
+		// 	font-weight 700
+		// 	line-height 36px
+		@media mobile
+			margin-left 10px
+		& p
+			color #7f8ea5
+			font-family "Proxima Nova"
+			font-size 16px
+			font-weight 400
+			line-height 20px
+			margin-top 5px
+			@media only screen and (max-width: 450px)
+				font-size: 14px;
+				line-height: 17px;
+			@media only screen and (max-width: 350px)
+				font-size: 12px;
+				line-height: 17px;
+
+.logo-link
+	text-decoration: none;

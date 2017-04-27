@@ -1,0 +1,118 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		title Future project
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+		link(rel="shortcut icon" type="image/x-icon" href="images/favicon.ico")
+		link(rel="apple-touch-icon" sizes="57x57" href="images/favicon-iphone.svg")
+		link(rel="apple-touch-icon" sizes="114x114" href="images/favicon-iphone.svg")
+		link(rel="apple-touch-icon" sizes="72x72" href="images/favicon-iphone.svg")
+		link(rel="apple-touch-icon" sizes="144x144" href="images/favicon-iphone.svg")
+		link(rel="apple-touch-icon" sizes="57x57" href="images/favicon-iphone.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="images/favicon-iphone.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="images/favicon-iphone.png")
+		link(rel="apple-touch-icon" sizes="144x144" href="images/favicon-iphone.png")
+		
+		//- script
+		//- 	include ../bower_components/async-styles-loader/async-style.min.js
+		//- 	| getFont("css/fonts.css","css/fonts_ie8.css", "1.0.0")
+		//- 	| //getStyleAsync("../css/all.css?ver=1.0.0",'all');
+		!="<!--[if IE 9]>"
+		script(type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js")
+		!="<![endif]-->"
+		link(rel="stylesheet", href="css/fonts.css")
+		link(rel="stylesheet", href="css/all.css")
+		block vars
+		block mixins
+			mixin breadcrumbs(name)
+				.breadcrumbs
+					-for(var i=0; i < name.length - 1; i++ )
+						a.breadcrumbs__item(href="#")= name[i]
+						span.breadcrumbs__separator /
+					span.breadcrumbs__item= name[name.length - 1]
+	body
+		.side-menu
+
+			.side-menu-header
+				img.js-side-menu(src="images/icon-x.svg" alt="icon X")
+				.side-menu-header__text.js-side-menu СВЕРНУТЬ МЕНЮ
+			nav.nav-side
+				a.nav-side__item.scroll-link(href="#about") О себе
+				a.nav-side__item.scroll-link(href="#service") Услуги
+				a.nav-side__item.scroll-link(href="#answer") Вопрос-ответ
+				a.nav-side__item.scroll-link(href="#articles") Статьи
+				a.nav-side__item.scroll-link(href="#reviews") Отзывы
+				a.nav-side__item.scroll-link(href="#") Контакты
+				a.nav-side__item.scroll-link(href="#") Личный кабинет
+				img.nav-side__img(src="images/icon-call.svg" alt="icon phone")
+				img.nav-side__img(src="images/icon-mail.svg" alt="icon phone")
+		.canvas
+			header.header(class=(headerClass ? headerClass : ''))
+				.header-top
+					.header-top__wrapper
+						.side-menu-button.js-side-menu
+						a.logo.logo--header(href='/')
+						.logo__text
+							a.logo-link(href='/')
+								h2
+									| Кочетков
+							a.logo-link(href='/')
+								p.body.header-surname
+									| Александр Михайлович
+						.header-wrap
+							.header-info
+								.header-info__text
+									| Звоните —
+									| 8 903 796-71-08
+								.header-info__text
+									| Пишите —
+									a.link-text.link-text--mail.td-none(href='mailto:info@amkdoc.ru')
+										| info@amkdoc.ru
+							nav.nav
+								a.nav__item(href='/?arc=about') О себе
+								a.nav__item(href='/?arc=service') Услуги
+								a.nav__item(href='/?arc=answer') Вопрос-ответ
+								a.nav__item(href='/?arc=articles') Статьи
+								a.nav__item(href='/?arc=reviews') Отзывы
+								a.nav__item(href='/contacts') Контакты
+				block headerAdd
+
+
+			main.main
+				block content
+			footer.footer
+				.footer-top
+					.row
+						.col-12
+							.nav-footer-wrap
+								nav.nav.nav--footer
+									a.nav__item.scroll-link(href='/#about') О себе
+									a.nav__item.scroll-link(href='/#service') Услуги
+									a.nav__item.scroll-link(href='/#answer') Вопрос-ответ
+									a.nav__item.scroll-link(href='/#articles') Статьи
+									a.nav__item.scroll-link(href='/#reviews') Отзывы
+									a.nav__item(href='/contacts') Контакты
+						.col-12.center-flex
+							H2.footer-top__text.footer-top__text--h2 Ваш доктор,
+						.col-12.center-flex
+							p.footer-top__text Кочетков Александр Михайлович
+						.col-6
+							.footer-top-callback-left
+								img(src="images/icon-call.svg" alt="Телефон")
+								.footer-top-callback__text 8 903-214-12-56
+						.col-6
+							.footer-top-callback
+								img(src="images/icon-mail.svg" alt="E-mail")
+								.footer-top-callback__text info@amkdoc.ru
+
+				.footer-bottom
+					.row
+						.col-12.center-flex
+							.footer-bottom__text-wrap
+								p.footer-bottom__text © 2010-2016 Amkdoc. 
+								p.footer-bottom__text Любое копирование информации запрещено.
+
+
+		script(type="text/javascript", src="js/all.js", async="async")

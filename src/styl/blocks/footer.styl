@@ -1,0 +1,105 @@
+.footer
+	width 100%
+	color #fff
+	// flex 0 0 auto
+	position relative
+	&__text
+		color #fff
+		font-size 20px
+		font-weight 900
+		line-height 26px
+		text-transform uppercase
+	&__phone
+		color #fff
+		font-family "ProximaNova"
+		font-size 24px
+		font-weight 700
+		line-height 30px
+		margin-top 15px
+	&__mail
+		color #525b6a
+		
+.footer-top
+	background-color #edf6fd
+	padding 60px 0 50px
+	position relative
+	//text-align center
+	@media mobile
+		padding 35px 0
+		margin-top 60px
+	//&:before
+	//	content ''
+	//	size 100% 22px
+	//	background url("../images/block-circle-border-footer.svg") repeat-x
+	//	display block
+	//	position absolute
+	//	top -5px
+	&__text
+		// max-width 368px
+		color #525b6a
+		font-family "Proxima Nova"
+		font-size 24px
+		line-height 32px
+		font-weight 300
+		margin 0px auto 30px
+		&--h2
+			// max-width 155px
+			font-weight 700
+			margin-bottom 0px
+		@media mobile
+			font-size 20px
+			line-height 30px
+				
+
+	&-callback
+		display flex
+		transition: 0.3s all ease-out;
+		@media mobile
+			justify-content: center;
+			margin-left: auto;
+			margin-right: auto;
+		.footer-top-callback .link-text:hover
+			color #6bd869
+		&-left
+			display flex
+			float right
+			@media mobile
+				display: flex;
+				justify-content: center;
+				float: none;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 15px;
+		&__text
+			//height 24px
+			color #525b6a
+			font-family "Proxima Nova"
+			font-size 20px
+			font-weight 400
+			line-height 24px
+			text-decoration: none;
+			padding-top 19px
+			margin-left 15px
+.footer-bottom
+	min-height: 60px;
+	background-color: #525b6a;
+	padding: 16px 0;
+	&__text
+		color white
+		display inline-block
+		font-family "Proxima Nova"
+		font-size 12px
+		font-weight 400
+		line-height 32px
+		margin 0 auto
+		@media mobile
+			line-height: 18px;
+			display: block;
+		&-wrap
+			text-align center
+		
+
+.nav-footer-wrap
+	display: block;
+	@media only screen and (max-width: 753px)
+		overflow-x: scroll;

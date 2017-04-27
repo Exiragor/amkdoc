@@ -1,0 +1,58 @@
+.side-menu
+	width 250px
+	max-height 100%
+	overflow auto
+	// background-color #333
+	// padding 15px 0px
+	transform translateX(0)
+	position absolute
+	left 0
+	top 0
+	z-index 0
+.side-menu-header
+	height: 141px;
+	text-decoration none
+	border-bottom 1px dashed #d7dfe5
+	padding 25px 25px 20px
+	display flex
+	align-items center
+	@media mobile
+		height: 111px;
+	&__text
+		opacity 0.6
+		color #7f8ea5
+		font-family "Proxima Nova"
+		font-size 12px
+		font-weight 700
+		line-height 15px
+		margin-left 16px
+		
+.side-menu-button
+	@media not-mobile
+		display none
+	@media only screen and (min-width: 1150px)
+		display: none;
+	@media only screen and (max-width: 940px)
+		top: 58px;
+	size 28px 21px
+	background-color transparent
+	border-top 3px solid #7f8ea4
+	border-bottom 3px solid #7f8ea4
+	position absolute
+	top: 58px;
+	right: 20px;
+	z-index 10
+	@media mobile
+		top: 43px;
+		right: 15px;
+	&:before
+		content ""
+		size 100% 3px
+		background-color #7f8ea4
+		position relative
+		top 6px
+		z-index 1
+		display block
+.side-menu-vk
+	margin-top 45px
+	display inline-block

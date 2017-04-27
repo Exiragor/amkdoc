@@ -1,0 +1,27 @@
+.canvas__wrapper
+	size 100%
+	// overflow-x hidden
+	//background-color #edf6fd
+	position relative
+	-webkit-backface-visibility hidden
+	backface-visibility hidden
+	-webkit-overflow-scrolling auto
+	display table
+	&--open
+		overflow-x hidden
+		.canvas__inner
+			transform translateX(250px)
+.canvas__inner
+	size 100%
+	min-height 100vh
+	background-color #edf6fd
+	position relative
+	display table
+	transition transform 0.5s ease
+	// &::before
+	// &::after
+	// 	content ' '
+	// 	display table
+	// 	-ms-flex-preferred-size 0
+	// 	flex-basis 0
+	// 	order 1

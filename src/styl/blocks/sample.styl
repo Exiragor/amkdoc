@@ -1,0 +1,73 @@
+.sample-wrapper
+	// overflow-x hidden
+	@media mobile
+		height 265px
+		overflow hidden
+		margin-top 20px
+.sample
+	margin-bottom 40px
+	@media mobile
+		height 100%
+		overflow hidden
+		margin-bottom 0
+		margin 0 -15px
+		width auto
+	&__item
+		height 300px
+		color #fff
+		text-decoration none
+		background-size cover
+		background-position 50%
+		padding 40px
+		margin-top 40px
+		position relative
+		display flex
+		flex-direction column
+		align-items flex-start
+		@media mobile
+			height 220px
+			padding 20px
+		&:hover
+			&:after
+				content ''
+				size 100%
+				border 4px solid #cf73b0
+				position absolute
+				top -10px
+				left 10px
+				display block
+				@media mobile
+					left 0
+					top 0
+			{up(3)}__caption
+				color #19deea
+	&__caption
+		font-size 24px
+		font-weight 900
+		line-height 30px
+		text-transform uppercase
+		@media mobile
+			font-size 18px
+			line-height 27px
+	&__demo
+		border-link(#fff)
+		font-size 14px
+		font-weight 700
+		line-height 20px
+		margin-top 10px
+	&__price
+		font-size 24px
+		font-weight 700
+		line-height 30px
+		margin-top auto
+	&__desc
+		font-size 12px
+		font-weight 700
+		line-height 18px
+		margin-top 5px
+// .sample-slider
+// 	margin-bottom 20px
+// 	@media not-mobile
+// 		display none
+.slick-slide .sample__item
+	margin-top 0

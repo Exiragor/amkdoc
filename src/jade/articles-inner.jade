@@ -1,0 +1,30 @@
+extends articles
+
+block articles
+	.row.row--answer
+		-for(var i = 0; i < 8; i++)
+			.col-12
+				.answer-wrapper.js-answer
+					.answer-question.js-answer-toggle
+						svg.answer-question__img(xmlns="http://www.w3.org/2000/svg" width="44" height="44")
+							path.circle(fill="#7f8ea5" d="M0 22C0 9.85 9.85 0 22 0s22 9.85 22 22-9.85 22-22 22S0 34.15 0 22z")
+							path(fill="#fff" d="M12 22c0-1.105.895-2 2-2h16c1.105 0 2 .895 2 2s-.895 2-2 2H14c-1.105 0-2-.895-2-2z")
+							path.line(fill="#fff" d="M22 12c1.105 0 2 .895 2 2v16c0 1.105-.895 2-2 2s-2-.895-2-2V14c0-1.105.895-2 2-2z")
+						h3.answer-question__text Болит низ живота
+					.body.answer-question__hide-text
+						.answer-wrapper.js-answer
+							.answer-question.js-answer-toggle
+								svg.answer-question__img(xmlns="http://www.w3.org/2000/svg" width="44" height="44")
+									path.circle(fill="#7f8ea5" d="M0 22C0 9.85 9.85 0 22 0s22 9.85 22 22-9.85 22-22 22S0 34.15 0 22z")
+									path(fill="#fff" d="M12 22c0-1.105.895-2 2-2h16c1.105 0 2 .895 2 2s-.895 2-2 2H14c-1.105 0-2-.895-2-2z")
+									path.line(fill="#fff" d="M22 12c1.105 0 2 .895 2 2v16c0 1.105-.895 2-2 2s-2-.895-2-2V14c0-1.105.895-2 2-2z")
+								h3.answer-question__text Болит низ живота
+							.body.answer-question__hide-text
+								.article-item
+									span.article-item__text Пневмонии
+						-for(var j = 0; j < 3; j++)
+							.article-item
+								span.article-item__text Пневмонии
+		.col-12
+			.article-item
+				span.article-item__text Белково-энергетическая недостаточность

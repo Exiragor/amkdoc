@@ -1,0 +1,74 @@
+.button
+	color white
+	cursor pointer
+	font-family "Proxima Nova"
+	font-size 14px
+	font-weight 700
+	line-height 17px
+	text-decoration none
+	text-transform uppercase
+	text-align center
+	border none
+	border-radius 100px
+	padding 21px 40px
+	display inline-block
+	transition: all 0.3s ease-out;
+	@media mobile
+		margin-top: 40px;
+	&--green
+		background-color #6bd869
+		&:hover
+			box-shadow 0 20px 30px rgba(106, 216, 104, 0.5)
+	&--blue
+		background-color #72afff
+		&:hover
+			box-shadow 0 20px 30px rgba(113, 175, 255, 0.5)
+		&-light
+			background-color #8dd8fc
+			&:hover
+				box-shadow 0 20px 30px rgba(130, 211, 252, 0.5)
+	&--tran
+		color #7f8ea5
+		background-color transparent
+		border 1px solid #7f8ea5
+		&:hover
+			color white
+			background-color #7f8ea5
+	&-double
+		margin-left 20px
+		@media mobile
+			display none
+	&--fixed
+		position fixed
+		bottom 50px
+		box-shadow 0 20px 30px rgba(106, 216, 104, 0.5)
+		z-index 1
+	&--service-mobile
+		@media mobile
+			margin-top: 30px;
+	&--articles-mobile
+		@media mobile
+			margin-top: 20px;
+.button-vk
+	color #fff
+	font-size 12px
+	font-weight 900
+	line-height 16px
+	text-transform uppercase
+	text-decoration none
+	background #538dbe url("../images/icon-vk.svg") 25px 50% no-repeat
+	border-radius 3px
+	box-shadow 0 2px 1px #3c6a91
+	padding 15px 25px 15px 70px
+	margin-top 20px
+	display inline-block
+	transition background-color .3s ease-out
+	&:hover
+		background-color #68a1d2
+
+
+
+
+
+
+

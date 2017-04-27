@@ -1,0 +1,101 @@
+.articles
+	&-top-text
+		max-width 904px
+		margin-top 10px
+		margin-bottom 30px
+		@media mobile
+			text-align center
+	&__item-pic
+		min-height 205px
+		color #7f8ea5
+		font-family "Proxima Nova"
+		font-size 20px
+		font-weight 700
+		line-height 26px
+		display flex
+		justify-content center
+		flex-direction column
+		border 2px solid #ebf4fb
+		border-radius 25px
+		padding-top 40px
+		padding-bottom 40px
+		margin-bottom 20px
+		transition all 0.3s ease-out
+		{root()}--offset &
+			margin-bottom 40px
+		path
+			transition all 0.3s ease-out
+		&:hover
+			color #6bd869
+			box-shadow 0 25px 30px rgba(127, 142, 165, 0.3)
+			cursor pointer
+			path
+				fill #6bd869
+		&-text
+			display inline-block
+			&-wrpa
+				display flex
+				justify-content center
+			
+	&__item-text
+		font-size: 16px;
+		border-bottom	2px solid rgba(127, 142, 165, .3);
+		color #7f8ea5
+		display inline
+		transition: all 0.3s ease-out;
+		@media mobile
+			display none
+		&:hover
+			cursor pointer
+			color #525b6a
+			border-bottom 2px solid #525b6a
+		&-wrap
+			text-align center
+			& + &
+				margin-top 20px
+			&--last
+				margin-bottom 47px
+				@media mobile
+					margin-bottom 0px
+
+
+.svg-icons
+	max-width 81px
+
+.article-item
+	color #7f8ea5
+	margin-top 15px
+	@media mobile
+		margin-top 0
+		& + &
+			margin-top 15px
+	&:before
+		content ""
+		size 18px 24px
+		background url('../images/icon-doc.svg') 5% no-repeat
+		opacity .5
+		vertical-align bottom
+		margin-right 10px
+		display inline-block
+		transition opacity .3s
+	&:hover
+		color #525b6a
+		&:before
+			opacity 1
+	&__text
+		border-link(#d8dde4)
+		line-height 24px
+		color inherit
+		transition border-color .3s, color .3s
+		{root()}:hover &
+			border-color #7f8ea5
+	.row--answer &
+		margin-left 45px
+	.answer-wrapper &
+		margin-left 0
+		@media mobile
+			margin-left 45px
+	.answer-wrapper + &
+		margin-top 30px
+		@media mobile
+			margin-top 10px

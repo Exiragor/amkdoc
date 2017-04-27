@@ -1,0 +1,95 @@
+// skeleton
+body
+	min-height 100vh
+	display flex
+	flex-direction column
+	background-color #edf6fd
+.canvas
+	min-height 100vh
+	position relative
+	display flex
+	flex-direction column
+	background-color #edf6fd
+	transition transform .3s ease-out
+	// &:before
+	// 	content ""
+	// 	position fixed
+	// 	top 0
+	// 	left 0
+	// 	size 100%
+	// 	background-color #fff
+	// 	z-index 0
+	&--slide
+		transform translateX(250px)
+.header
+	position relative
+	flex 0 0 auto
+.main
+	display block
+	flex 1 0 auto
+.footer
+	position relative
+	flex 0 0 auto
+
+// .flexboxtweener,
+// .flexboxtweener>body,
+// .flexboxtweener>.canvas
+// 	height 100%
+	
+
+.wrapper
+	width 100%
+.row
+	width 100%
+	max-width page-width + 40px
+	margin-left auto
+	margin-right auto
+	display flex
+	flex-flow row wrap
+	[class^="col"]
+		padding-left 20px
+		padding-right 20px
+		flex-shrink 0
+		flex-grow 0
+		@media mobile
+			padding-left 15px
+			padding-right 15px
+		// & + [class^="col"]
+		// 	@media mobile
+		// 		padding-top 30px
+	&--answer
+		[class^="col"]
+			@media mobile
+				padding-left 0px
+				padding-right 0px
+	&--60
+		max-width 1340 + 40px
+		[class^="col"]
+			padding-left 20px
+			padding-right 20px
+.row--70
+	max-width 760px
+	[class^="col"]
+		padding-left 10px
+		padding-right 10px
+
+	  //&--20
+	 //	max-width 1120px
+	 //	[class^="col"]
+	 //		padding-left 10px
+	 //		padding-right 10px
+	 //		@media mobile
+	 //			padding-left 15px
+	 //			padding-right 15px
+	 //		& + [class^="col"]
+	 //			@media mobile
+	 //				padding-top 10px
+for num in (1..12)
+	.col-{num}
+		width (100% * num / 12)
+		@media mobile
+			width 100%
+	
+.col-4
+	@media only screen and (max-width: 800px)
+		width 100%

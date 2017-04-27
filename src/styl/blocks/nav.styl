@@ -1,0 +1,143 @@
+.nav
+	margin-left auto
+	// margin-right 60px
+	@media only screen and (max-width: 1150px)
+		display none
+	&__item
+		border-link(#7f8ea5)
+		border-color rgba(127, 142, 165, .3)
+		font-family "Proxima Nova"
+		font-size 16px
+		font-weight 400
+		line-height 20px
+		transition: all 0.3s ease-out;
+		& + &
+			margin-left 30px
+		&:hover
+			color: #525b6a;
+			text-decoration: none;
+			border-color: #525b6a;
+			display: inline-block;
+		&--mobile
+			@media only screen and (max-width: 735px)
+				float: left;
+			
+		&--mob	
+			@media only screen and (max-width: 386px)
+				display none
+		&.bread
+			font-size: 14px;
+			line-height: 18px;
+			border: none;
+			&:hover
+				color: #6bd869;
+	&--footer
+		text-align: center;
+		margin-left auto
+		margin-right auto
+		margin-bottom 50px
+		@media only screen and (max-width: 1150px)
+			display block
+		@media only screen and (max-width: 753px)
+			min-width: 560px;
+			margin-left: 15px;
+.nav-lk
+	height 100%
+	min-width 415px
+	overflow hidden
+	background-color alpha(#f0f0f0, .1) //#32342e
+	padding 0 20px
+	margin-left 40px
+	position relative
+	@media only screen and (max-width: 800px)
+		margin-left auto
+	@media mobile
+		min-width 0
+		background-color transparent
+		padding 0
+	&:after
+		content ""
+		size 10px 100%
+		box-shadow 10px 3px 20px rgba(0, 0, 0, 0.9)
+		position absolute
+		left -12px
+		top 0
+		z-index 10
+		@media only screen and (max-width: 1100px)
+			box-shadow 1px 2px 20px 10px rgba(0,0,0,0.15)
+			width 0
+			left 0
+		@media mobile
+			display none
+	&__item
+		size 50% 100%
+		color #fff
+		font-size 14px
+		font-weight 700
+		text-decoration none
+		// padding 0 20px
+		display inline-flex
+		justify-content center
+		align-items center
+		transition color 0.3s ease-out
+		path
+			transition all 0.3s ease-out
+		&:hover
+			color #19DEEA
+			path
+				fill #19DEEA
+		@media mobile
+			width 100%
+			font-size 13px
+			&:first-child
+				display none
+	&__text
+		line-height 70px
+		// float right
+	&__icon
+		height 25px
+		background-position 50%
+		background-repeat no-repeat
+		margin-right 15px
+		// float left
+		display inline-block
+		@media mobile
+			margin-right 10px
+		&--reg
+			background-image url("../images/icon-registration.svg")
+		&--login
+			background-image url("../images/icon-login.svg")
+.nav-footer
+	margin-top 30px
+	&__item
+		border-link(#7d7d7d)
+		font-size 14px
+		font-weight 700
+		line-height 21px
+		display table
+		&:hover
+			border-link(#B0F1FF)
+			line-height 21px
+			display table
+		& + &
+			padding-top 15px
+.nav-side
+	@extend .nav-footer
+	margin-top 25px
+	padding-left 25px
+	&__item
+		border-link(#7f8ea5)
+		border-color rgba(127, 142, 165, .3)
+		display table
+		font-weight 400
+		&:hover
+			border-link(#525b6a)
+			display table
+	&__img
+		margin-top 30px
+		display: inline-block;
+		& + &
+			margin-left 25px
+
+.nav-icon-link
+	text-decoration: none;
